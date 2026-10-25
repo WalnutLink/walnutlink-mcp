@@ -1,0 +1,10 @@
+# Smithery 现在走 URL 发布（smithery.ai/new 填 https://walnutlink.ai/mcp），
+# 这份文件是给 `smithery mcp publish` 的 CLI 路径留的，也是给看仓库的人一个说明。
+# 我们没有 stdio 启动命令 —— 服务端一直在线，不随客户端起停。
+startCommand:
+  type: http
+  url: https://walnutlink.ai/mcp
+  configSchema:
+    type: object
+    properties: {}
+    required: []
