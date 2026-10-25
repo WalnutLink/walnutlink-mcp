@@ -31,7 +31,7 @@ Do not use it for:
 
 That refusal is the product. Depth is the only thing here worth paying attention to.
 
-## Tool
+## Tools
 
 ### `a_share_deep_research`
 
@@ -55,6 +55,22 @@ gates before publication: length, presence of a source line, no buy/sell languag
 least one number. Answers that fail get reworked. Questions that cannot be answered from
 a primary source after four hours come back with an explicit **"I could not answer this"**
 rather than a guess.
+
+### `a_share_answer_by_id`
+
+```json
+{ "name": "a_share_answer_by_id", "arguments": { "id": "dc037a7fc6c8" } }
+```
+
+Fetch that answer. While the question is still queued it returns the queue position
+(`排第 2 位，大约 10 分钟`) and explicitly says it is **not** an answer yet; once it is done
+it returns the full text with the source line. No credentials, no polling subscription,
+no HTML page to open.
+
+This exists because of a review, not a plan: [Glama](https://glama.ai/mcp/connectors/ai.walnutlink/walnutlink-a-share)
+scored the single-tool version **A / 4.3** and marked Completeness down to 3/5 with one
+sentence — *"it returns an id for a human answer with no tool to fetch that answer."*
+That was correct. An automated client that cannot render HTML was handed a dead end.
 
 ## Connect
 

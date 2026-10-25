@@ -3,7 +3,7 @@
   "name": "ai.walnutlink/walnutlink-a-share",
   "title": "WalnutLink A-share Depth Desk",
   "description": "Depth on China A-shares: reads filings to explain why a number moved. No quotes, no price.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "websiteUrl": "https://walnutlink.ai",
   "remotes": [
     {
