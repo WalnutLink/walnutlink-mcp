@@ -2,9 +2,13 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.walnutlink/walnutlink-a-share",
   "title": "WalnutLink A-share Depth Desk",
-  "description": "Depth on China A-shares: reads filings to explain why a number moved. No quotes, no price.",
-  "version": "1.2.0",
+  "description": "Use when the user asks why a China A-share number moved, whether a margin or inventory trend continues into next quarter, what management actually said, or how two Chinese companies relate (supply, competitor, equity — including unlisted acquisition targets). Answers are built from the quarterly filing and the IR transcript, with the passage quoted. Every relationship edge carries a verbatim quote and a primary/secondary/inferred tag. Does NOT serve price, pct change, PE, market cap or limit-up reason.",
+  "version": "1.3.0",
   "websiteUrl": "https://walnutlink.ai",
+  "repository": {
+    "url": "https://github.com/WalnutLink/walnutlink-mcp",
+    "source": "github"
+  },
   "remotes": [
     {
       "type": "streamable-http",
